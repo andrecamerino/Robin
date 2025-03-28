@@ -5,9 +5,10 @@ const recyclingInfo = {
     'can': 'Can (Recyclable)',
     'bottle': 'Bottle (Recyclable)',
     'cup': 'Cup (Recyclable)', 
-    'plate': 'Plate (Recyclable)', 
+    'cup': 'Cup (Recyclable)', 
     
     'apple': 'Apple (Compost)',
+    'pizza': 'Pizza (Compost)',
     'banana': 'Banana (Compost)',
     'orange': 'Orange (Compost)'
 };
