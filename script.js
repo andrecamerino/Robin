@@ -5,6 +5,7 @@ const recyclingInfo = {
     'can': 'Can (Recyclable)',
     'bottle': 'Bottle (Recyclable)',
     'cup': 'Cup (Recyclable)', 
+    'plate': 'Plate (Recyclable)', 
     
     'apple': 'Apple (Compost)',
     'banana': 'Banana (Compost)',

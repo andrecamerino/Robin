@@ -1,4 +1,3 @@
-/* General styling for the body */
 body {
     margin: 0;
     padding: 0;
@@ -10,13 +9,12 @@ body {
     overflow: hidden;
 }
 
-/* Styling for the video element */
 #webcam {
     border: 2px solid #fff;
-    border-radius: 10px;
+    border-radius: 10px; 
+    height:80vh;
 }
 
-/* Styling for the detection result box */
 #detection-result {
     position: absolute;
     top: 10px;
@@ -31,7 +29,6 @@ body {
     z-index: 10;
 }
 
-/* Optional: Animation for the detection result (fade in/out) */
 @keyframes fadeIn {
     0% {
         opacity: 0;
