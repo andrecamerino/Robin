@@ -11,7 +11,12 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.4"
+    "next": "15.2.4",
+    "@tensorflow/tfjs-core": "^2.8.6",
+    "@tensorflow/tfjs-backend-cpu": "^2.8.6",
+    "@tensorflow/tfjs-backend-webgl": "^2.8.6",
+    "@tensorflow/tfjs-converter": "^2.8.6",
+    "@tensorflow-models/coco-ssd": "^2.2.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
