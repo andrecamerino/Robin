@@ -1,0 +1,46 @@
+/* General styling for the body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Styling for the video element */
+#webcam {
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/* Styling for the detection result box */
+#detection-result {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+/* Optional: Animation for the detection result (fade in/out) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#detection-result {
+    animation: fadeIn 0.5s ease-out;
+}
