@@ -1,0 +1,95 @@
+body {
+    background-color: #364e3d;
+}
+
+/* FAQ Page Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Kode Mono', monospace;
+}
+
+.header {
+    text-align: center;
+    color: #ffffff;
+    margin-top: -200px;
+    font-size: 24px;
+    margin-bottom: -20px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kode Mono', monospace;
+}
+
+.logo {
+    height: 390px;
+    width: auto;
+    margin-top: 0px;
+}
+
+.header p {
+    margin: 5px 0;
+    font-family: 'Kode Mono', monospace;
+}
+
+.instructions {
+    margin-top: -100px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: 'Kode Mono', monospace;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.instructions p {
+    font-family: 'Kode Mono', monospace;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 5px;
+    }
+    
+    .header {
+        margin-bottom: 15px;
+    }
+    
+    .demo-section {
+        padding: 10px;
+    }
+    
+    .step {
+        padding: 8px;
+    }
+}
+
+.button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Kode Mono', monospace;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1976D2;
+    cursor: pointer;
+} 
