@@ -65,7 +65,7 @@ function displayResults(objects) {
         }
     });
 
-    activeBinTimeout = setTimeout(resetBinHighlight, 1000);
+    // activeBinTimeout = setTimeout(resetBinHighlight, 1000);
 }
 
 function resetBinHighlight() {
