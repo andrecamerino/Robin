@@ -115,3 +115,13 @@ body {
 .bin.fade {
     animation: fadeInOut 2s ease-in-out;
 }
+
+.FAQ-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
