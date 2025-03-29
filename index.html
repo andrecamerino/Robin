@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Object Detection - Coke Can & Banana</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <video id="webcam" autoplay></video>
+    <div class="page">
+        <div id="detection-result"></div>
+        <div class="main-container">
+            <div class="bin-container">
+                <div class="bin" id="recycling">
+                    <img src="./assets/recycle.png" alt="">
+                    <h1>Recycling</h1>
+                </div>
+                <div class="bin" id="trash">
+                    <img src="./assets/trash.png" alt="">
+                    <h1>Waste</h1>
+                </div>
+                <div class="bin" id="compost">
+                    <img src="./assets/compost.png" alt="">
+                    <h1>Compost</h1>
+                </div>
+            </div>
+            <video id="webcam" autoplay></video>
+            <img src="./assets/logo.png" alt="" class="logo">
+        </div>
+    </div>
 
-    <div id="detection-result" style="position: absolute; top: 10px; left: 10px; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
