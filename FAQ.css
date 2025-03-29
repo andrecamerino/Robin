@@ -92,4 +92,15 @@ body {
 .back-button:hover {
     background-color: #1976D2;
     cursor: pointer;
+}
+
+.back-button-img {
+    width: 40px;  /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.back-button-img:hover {
+    transform: scale(1.1);  /* Slight grow effect on hover */
+    cursor: pointer;
 } 
