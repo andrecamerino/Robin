@@ -1,7 +1,15 @@
+* {
+    /* outline: 1px solid red; */
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #364E3D;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,16 +17,21 @@ body {
     overflow: hidden;
 }
 
+/* .logo {
+    margin: auto;
+} */
+
 #webcam {
-    border: 2px solid #fff;
-    border-radius: 10px; 
+    /* border: 2px solid #fff; */
+    /* border-radius: 10px;  */
     height:80vh;
+    border-radius: 5px;
 }
 
 #detection-result {
-    position: absolute;
+    /* position: absolute;
     top: 10px;
-    left: 10px;
+    left: 10px; */
     padding: 15px;
     font-size: 18px;
     color: #fff;
@@ -26,7 +39,7 @@ body {
     border-radius: 8px;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    text-emphasis: center;
 }
 
 @keyframes fadeIn {
@@ -40,4 +53,65 @@ body {
 
 #detection-result {
     animation: fadeIn 0.5s ease-out;
+}
+
+.main-container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bin-container {
+    padding-right: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px
+}
+
+.page {
+    display: grid;
+    grid-template-rows: 40px auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+
+.bin {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bin img {
+    width: 200px;
+}
+
+.logo {
+    position: fixed;
+    bottom: -160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes fadeInOut {
+    0% {
+        background-color: #D9D9D9; /* Original color */
+        opacity: 0;
+    }
+    50% {
+        background-color: #FFD700; /* Yellow highlight */
+        opacity: 1;
+    }
+    100% {
+        background-color: #D9D9D9; /* Original color */
+        opacity: 0;
+    }
+}
+
+.bin.fade {
+    animation: fadeInOut 2s ease-in-out;
 }
